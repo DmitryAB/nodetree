@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a nodejs test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akchurin Dmitry",
+  "license": "private",
+  "dependencies": {
+    "express": "*",
+    "body-parser": "*",
+    "jade": "*"
+  }
+}

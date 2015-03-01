@@ -23,19 +23,6 @@ function post_send(){
 	req.send(JSON.stringify(getNode($('body>ul>li'))));
 
 }
-function close_form(){
-	$("#add_form").hide();
-	$("#add_form").attr('data-element','');
-	$("[data-add=true]").attr("data-add","");
-	$("#add_form input[type='text']").val('');
-	$("body > ul").show();
-	$(".save").show();
-}
-function add_node(){
-	var val = $('input[type="text"]').val();
-	$("[data-add=true]").append("<ul><li data-value='"+val+"' class='node'>"+val+"</li></ul>");
-	close_form();
-}
 $(document).ready(function(){
 
 	//Добавить лeвой кнопкой

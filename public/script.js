@@ -41,11 +41,10 @@ $(document).ready(function(){
 	//Добавить лeвой кнопкой
 	$(document).on('click','ul>li',function(e){
 		if(e.target === this && e.button == 0){
-			$(this).attr("data-add",true);
-			$("#add_form").show();
-			$("body > ul").hide();
-			$(".save").hide();
-			$("#add_form").attr('data-element',$(e.target).prop('outerHTML'));
+			var val = prompt("node name");
+			if(val){
+				$(this).append("<ul><li data-value='"+val+"' class='node'>"+val+"</li></ul>")
+			}		
 		}
 	})
 

@@ -15,7 +15,3 @@ html
 		h3!="Left-mouse click to add new node <br> Middle-mouse click to delete a branch"
 		+parseObject(tree)
 		input.save(type="button",onclick="post_send()",value="Save")
-		div.add_node#add_form
-			input(type="text")
-			input.ok(type="button", value="Add", onclick="add_node()")
-			input.close(type="button", value="Cancel", onclick="close_form()")

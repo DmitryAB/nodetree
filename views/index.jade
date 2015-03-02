@@ -12,6 +12,6 @@ html
 		script(type='text/javascript', src='script.js')
 		link(rel="stylesheet", href="style.css")
 	body
-		h3!="Left-mouse click to add new node <br> Middle-mouse click to delete a branch"
+		h3!="Left-mouse click to add new node <br> Right-mouse click to delete a branch"
 		+parseObject(tree)
 		input.save(type="button",onclick="post_send()",value="Save")

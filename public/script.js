@@ -36,8 +36,9 @@ $(document).ready(function(){
 	})
 
 	//Удалить средней кнопкой мыши
-	$('ul>li').on('click',function(e){
-		if(e.target === this && e.button == 1){
+	$('ul>li').on('contextmenu',function(e){
+		e.preventDefault();
+		if(e.target === this){
 			if (confirm("Delete the branch?")){	
 				$(this).remove();
 			}

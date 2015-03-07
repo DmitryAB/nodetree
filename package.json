@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "*",
     "body-parser": "*",
-    "jade": "*"
+    "jade": "*",
+    "mongoose": "*"
   }
 }
